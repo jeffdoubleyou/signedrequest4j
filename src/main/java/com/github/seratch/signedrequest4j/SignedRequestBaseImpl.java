@@ -141,8 +141,8 @@ public abstract class SignedRequestBaseImpl implements SignedRequest {
 	@Override
 	public String getSignature(String url, HttpMethod method, String oAuthNonce, Long oAuthTimestamp) {
 		String baseString = getSignatureBaseString(url, method, oAuthNonce, oAuthTimestamp);
-		if (signatureMethod == SignatureMethod.HMAC_SHA1) {
-			String algorithm = "HmacSHA1";
+		if (signatureMethod == SignatureMethod.HMAC_SHA1 || signatureMethod == SignatureMethod.HMAC_SHA256) {
+			String algorithm = signatureMethod == SignatureMethod.HMAC_SHA1 ? "HmacSHA1" : "HmacSHA256";
 			String consumerSecret = consumer.getConsumerSecret();
 			String tokenSecret = (accessToken != null && accessToken.getTokenSecret() != null) ? accessToken.getTokenSecret() : "";
 			String key = consumerSecret + "&" + tokenSecret;

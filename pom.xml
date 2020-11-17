@@ -57,6 +57,19 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <profiles>
+        <profile>
+            <id>disable-java8-doclint</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <properties>
+                <additionalparam>-Xdoclint:none</additionalparam>
+                <doclint>none</doclint>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
 
         <dependency>
@@ -75,8 +88,7 @@
         <dependency>
             <groupId>com.github.seratch</groupId>
             <artifactId>httpilot</artifactId>
-            <version>0.1</version>
-            <scope>provided</scope>
+            <version>0.3.2</version>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -181,12 +193,15 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
+                        <configuration>
+                            <additionalparam>${javadoc.opts}</additionalparam>
+                        </configuration>
                         <goals>
                             <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>    
+            </plugin>
         </plugins>
     </build>
 

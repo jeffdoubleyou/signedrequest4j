@@ -27,6 +27,10 @@ public enum SignatureMethod {
 	 * HMAC-SHA1
 	 */
 	HMAC_SHA1("HMAC-SHA1"),
+    /**
+     * HMAC-SHA256
+     */
+    HMAC_SHA256("HMAC-SHA256"),
 	/**
 	 * RSA-SHA1
 	 */
