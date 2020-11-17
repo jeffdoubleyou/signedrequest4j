@@ -75,8 +75,7 @@
         <dependency>
             <groupId>com.github.seratch</groupId>
             <artifactId>httpilot</artifactId>
-            <version>0.1</version>
-            <scope>provided</scope>
+            <version>0.3.2</version>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -175,18 +174,6 @@
                     <downloadSources>true</downloadSources>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>    
         </plugins>
     </build>
 
