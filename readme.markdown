@@ -8,6 +8,14 @@ This library supports sending OAuth 1.0 signed HTTP requests and verifying the s
 
 With SignedRequest4J, it's so simple to execute 2-legged or 3-legged OAuth 1.0 signed HTTP requests.
 
+### Why update this old thing in 2020?
+
+I am working on something that uses SignedRequest4J to build OAuth 1.0 headers and needs to be updated to use HMAC-SHA256 which was not implemented.  Instead of rewriting everything, I just assumed it would be easier to add HMAC-SHA256 to this repo.  I can't find another library which is capable of simply building a stand-alone OAuth 1.0 HTTP header.
+
+### Why is it not merged upstream?
+
+Project appears to be archived.
+
 ### 2-legged OAuth
 
 * Service Provider, Consumer
