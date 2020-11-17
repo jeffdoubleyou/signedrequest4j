@@ -92,16 +92,16 @@ Project appears to be archived.
 ```xml
 <dependencies>
   <dependency>
-    <groupId>com.github.seratch</groupId>
+    <groupId>com.github.jeffdoubleyou</groupId>
     <artifactId>signedrequest4j</artifactId>
-    <version>2.14</version>
+    <version>2.15</version>
   </dependency>
 </dependencies>
 ```
 
 ## Snippets
 
-See also: https://github.com/seratch/signedrequest4j/tree/master/src/test/java/com/github/seratch/signedrequest4j/snippet
+See also: https://github.com/jeffdoubleyou/signedrequest4j/tree/master/src/test/java/com/github/jeffdoubleyou/signedrequest4j/snippet
 
 ### 2-legged OAuth instance
 
@@ -137,6 +137,11 @@ SignedRequest signedRequest3 = SignedRequestFactory.create(consumer, accessToken
 
 ```java
 SignedRequest signedRequest2 = SignedRequestFactory.create(consumer, SignatureMethod.HMAC_SHA1);
+```
+### Signature method HMAC-SHA256
+
+```java
+SignedRequest signedRequest2 = SignedRequestFactory.create(consumer, SignatureMethod.HMAC_SHA256);
 ```
 
 ### Signature method RSA-SHA1
