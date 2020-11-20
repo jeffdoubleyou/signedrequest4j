@@ -1,8 +1,8 @@
 package server;
 
-import com.github.seratch.signedrequest4j.HttpMethod;
-import com.github.seratch.signedrequest4j.SignatureMethod;
-import com.github.seratch.signedrequest4j.SignedRequestVerifier;
+import com.github.jeffdoubleyou.signedrequest4j.HttpMethod;
+import com.github.jeffdoubleyou.signedrequest4j.SignatureMethod;
+import com.github.jeffdoubleyou.signedrequest4j.SignedRequestVerifier;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 

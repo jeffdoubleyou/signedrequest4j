@@ -1,6 +1,6 @@
 package server;
 
-import com.github.seratch.signedrequest4j.HttpMethod;
+import com.github.jeffdoubleyou.signedrequest4j.HttpMethod;
 import org.eclipse.jetty.server.Request;
 
 import javax.servlet.http.HttpServletRequest;

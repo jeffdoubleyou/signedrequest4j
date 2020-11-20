@@ -9,7 +9,7 @@
         </layout>
     </appender>
 
-    <logger name="com.github.seratch.signedrequest4j">
+    <logger name="com.github.jeffdoubleyou.signedrequest4j">
         <level value="debug"/>
     </logger>
 

@@ -106,7 +106,7 @@ See also: https://github.com/jeffdoubleyou/signedrequest4j/tree/master/src/test/
 ### 2-legged OAuth instance
 
 ```java
-import com.github.seratch.signedrequest4j.*;
+import com.github.jeffdoubleyou.signedrequest4j.*;
 
 OAuthConsumer consumer = new OAuthConsumer("consumer_key", "consumer_secret");
 SignedRequest twoLeggedOAuthRequest = SignedRequestFactory.create(consumer);

@@ -1,6 +1,6 @@
 package server;
 
-import com.github.seratch.signedrequest4j.OAuthConsumer;
+import com.github.jeffdoubleyou.signedrequest4j.OAuthConsumer;
 
 public class HttpServerSpec {
 
